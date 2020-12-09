@@ -65,6 +65,16 @@
             text-shadow: 0.13em -0.13em 0px #0000aa;
             letter-spacing: -0.05em;
         }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .buttons>button {
+            width: 33%;
+            height: 80px;
+        }
     </style>
 </head>
 
@@ -92,13 +102,15 @@
                                 min="0" />
                         </div>
                     </div>
+                    <div class="buttons">
 
-                    <button class="btn btn-primary" id="add" focus>
-                        Add
-                    </button>
-                    <button class="btn btn-danger marg" id="reset">
-                        Reset
-                    </button>
+                        <button class="btn btn-danger" id="reset">
+                            Reset
+                        </button>
+                        <button class="btn btn-primary" id="add" focus>
+                            Add
+                        </button>
+                    </div>
                     <div class="input-group score">
                         <div class="col">
                             <label for="completedInvoices"> copleted invoices</label>
